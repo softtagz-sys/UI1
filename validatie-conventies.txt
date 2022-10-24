@@ -1,5 +1,0 @@
-.\html\Productdetailpagina.html
-	Lang is not "nl"
-.\html\Productpagina.html
-	[Outline] Level conflict: 22
-	[Outline] Multiple headings: 7
