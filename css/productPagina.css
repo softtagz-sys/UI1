@@ -1,0 +1,27 @@
+.productGallery{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4,250px);
+    max-width: 1000px;
+    justify-content: center;
+}
+.productGallery img {
+    max-width: 200px;
+    height:auto;
+}
+.productGallery li:hover{
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.productGallery li a{
+    text-decoration: none;
+    color: #191919;
+}
+section{
+    width: 50%;
+}
+ul{
+    list-style: none;
+}
+p{
+    padding: 0;
+}

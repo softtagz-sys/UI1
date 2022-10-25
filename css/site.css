@@ -2,13 +2,58 @@
 colours
 logo:
     blue #1D67AE (For shades and tints: https://www.color-hex.com/color/1d67ae)
-
-
 */
 
+
+/*General CSS*/
 * {
     font-size: 100%;
-    font-family: Verdana;
+    font-family: Verdana, sans-serif;
+}
+
+body{
+    background-color: #e8eff6;
+}
+
+h2 {
+    font-size: 140%;
+    width: 90%;
+    text-align: center;
+    border-bottom: 1px solid #A8A8A8;
+    line-height: 0.1em;
+    margin: 50px auto;
+    color: #1D67AE;
+}
+h2 span {
+    background:#fff;
+    padding:0 10px;
+}
+h3 {
+    font-size: 100%;
+    width: 90%;
+    text-align: center;
+    border-bottom: 1px solid #A8A8A8;
+    line-height: 0.1em;
+    margin: 50px auto;
+    color: #1D67AE;
+}
+h3 span {
+    background:#fff;
+    padding:0 10px;
+}
+p{
+    color: #191919;
+    padding: 0 100px 0;
+}
+ul{
+    list-style: none;
+}
+
+/* HEADER */
+
+header img{
+    max-width:200px;
+    height:auto;
 }
 
 /* MENU */
@@ -18,10 +63,10 @@ logo:
     justify-content: space-evenly;
     align-items: center;
     padding: 0;
+    width: 50%;
 }
 .menu ul li
 {
-    list-style: none;
     position: relative;
     transition: 0.5s;
     display: block;
@@ -47,24 +92,25 @@ logo:
     margin-top: 5px;
     width: 100%;
     padding: 10px 2px;
-    box-shadow: 0px 20px 100px 0px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    box-shadow: 0 20px 100px 0 rgba(0, 0, 0, 0.5);
 }
 .menu a.active {
     color: #1D67AE;
 }
 
 /*CLASSES*/
-
 .content{
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0 10px 36px 0, rgba(0, 0, 0, 0.06) 0 0 0 1px;
     max-width: 1200px;
+    min-height: 1080px;
     margin: auto;
+    background-color: white;
 }
 .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
 }
 .hiddenTitle{
     position: absolute;

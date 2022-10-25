@@ -1,0 +1,13 @@
+.faq {
+    font-size: 0.8em;
+    border: solid 1px #999;
+    padding: 0.5em;
+}
+.faq dt {
+    background-color: #CCC;
+    padding: 0.3em;
+    font-weight: bold;
+}
+.faq dd {
+    padding: 0.5em 0.3em 1em;
+}
