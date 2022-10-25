@@ -1,0 +1,77 @@
+/*
+colours
+logo:
+    blue #1D67AE (For shades and tints: https://www.color-hex.com/color/1d67ae)
+
+
+*/
+
+* {
+    font-size: 100%;
+    font-family: Verdana;
+}
+
+/* MENU */
+.menu ul
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+}
+.menu ul li
+{
+    list-style: none;
+    position: relative;
+    transition: 0.5s;
+    display: block;
+}
+.menu ul li a
+{
+    color: black;
+    text-decoration: none;
+    padding: 6px 10px;
+}
+.menu ul li a:hover
+{
+    color: #1D67AE;
+}
+.menu ul li ul
+{
+    display: none;
+}
+.menu ul li:hover ul
+{
+    display: block;
+    position: absolute;
+    margin-top: 5px;
+    width: 100%;
+    padding: 10px 2px;
+    box-shadow: 0px 20px 100px 0px rgba(0, 0, 0, 0.5);
+}
+.menu a.active {
+    color: #1D67AE;
+}
+
+/*CLASSES*/
+
+.content{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    max-width: 1200px;
+    margin: auto;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.hiddenTitle{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    left: -10000px;
+}
+
+
