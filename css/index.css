@@ -24,7 +24,6 @@
 .container {
     position: relative;
     text-align: center;
-    color: white;
     font-size: 200%;
 }
 .imgCenteredText{
@@ -32,12 +31,13 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    margin-top: 0;
 }
-
-h3{
-    padding-left: 100px;
+p.imgCenteredText{
+    color: white;
+    text-shadow: 0 0 3px #191919, 0 0 5px #1D67AE;
 }
-
-p{
-    padding: 0 100px 0;
+p.imgCenteredText{
+    color: white;
+    text-shadow: 0 0 3px #191919, 0 0 5px #1D67AE;
 }
