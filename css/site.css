@@ -96,9 +96,6 @@ header img{
     box-shadow: 0 20px 100px 0 rgba(0, 0, 0, 0.5);
     z-index: 9000;
 }
-.menu a.active {
-    color: #1D67AE;
-}
 
 /*CLASSES*/
 .content{
