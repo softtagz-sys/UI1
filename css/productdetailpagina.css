@@ -29,3 +29,19 @@ ul{
 li{
     list-style: disc;
 }
+
+.ProductShow{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px
+}
+.ProductShow img{
+    grid-column: 1;
+}
+.ProductShow p{
+    grid-column: 2;
+    padding: 6em;
+    font-weight: bold;
+    align-items: start;
+
+}

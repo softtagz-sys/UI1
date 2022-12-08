@@ -41,6 +41,9 @@ p.imgCenteredText{
 blockquote {
     background: #f9f9f9;
     border-left: 10px solid #ccc;
+    margin-left: 100px;
+    margin-right: 100px;
+
 }
 blockquote:before {
     color: #ccc;
@@ -48,4 +51,5 @@ blockquote:before {
 }
 blockquote p {
     display: inline;
+    padding: 0;
 }
