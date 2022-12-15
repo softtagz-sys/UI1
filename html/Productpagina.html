@@ -29,19 +29,19 @@
             </nav>
         </header>
             <main>
+                <input id="a" type="checkbox" checked>
                 <input id="GW" type="checkbox">
                 <input id="C" type="checkbox">
-                <input id="V" type="checkbox">
                 <input id="boek" type="checkbox">
                 <input id="mini" type="checkbox">
                 <input id="tool" type="checkbox">
                 <input id="verf" type="checkbox">
             <aside>
                 <h2><span>Filter</span></h2>
+                <label for="a" id="lbla">alles</label><br>
                 <p>Merk</p>
                 <label for="GW" id="lblGW">Games workshop</label><br>
                 <label for="C" id="lblC">Citadel</label><br>
-                <label for="V" id="lblV">vallejo</label><br>
                 <p>Soort</p>
                 <label for="boek" id="lblBoek">Boek</label><br>
                 <label for="mini" id="lblMini">Mini</label><br>
@@ -53,48 +53,48 @@
                     <section class="center">
                         <h3 id="Essentials"><span>Essentials</span></h3>
                         <ul class="productGallery">
-                            <li data-filter="GW mini">
+                            <li data-filter="GW mini a">
                                 <a href="Productdetailpagina1.html">
                                     <img src="../media/WH40KRecruitEditionStock.webp" alt="WH40KRecruitEdition">
                                     <p>Warhammer 40k recruit edition</p>
                                     <p>€40,00</p>
                                 </a>
                             </li>
-                            <li data-filter="GW mini">
+                            <li data-filter="GW mini a">
                                 <a href="Productdetailpagina2.html">
                                     <img src="../media/WH40KEliteEditionStock.webp" alt="WH40KEliteEdition">
                                     <p>Warhammer 40k elite edition</p>
                                     <p>€80,00</p>
                                 </a>
                             </li>
-                            <li data-filter="GW mini">
+                            <li data-filter="GW mini a">
                                 <a href="Productdetailpagina3.html">
                                     <img src="../media/WH40KCommandEditionStock.webp" alt="WH40KCommandEdition">
                                     <p>Warhammer 40k command edition</p>
                                     <p>€145,00</p>
                                 </a>
                             </li>
-                            <li data-filter="GW boek">
+                            <li data-filter="GW boek a">
                                 <img src="../media/ENGRulebook.webp" alt="WH40KCoreRuleBook">
                                 <p>Warhammer 40K Core Rule Book</p>
                                 <p>€55,00</p>
                             </li>
-                            <li data-filter="GW tool">
+                            <li data-filter="GW tool a">
                                 <img src="../media/TapeMeasure.webp" alt="GWTapeMeasure">
                                 <p>GW Tape Measure</p>
                                 <p>€7,00</p>
                             </li>
-                            <li >
+                            <li data-filter="GW tool a">
                                 <img src="../media/Dice-Cube.webp" alt="Citadel12mmDiceSet">
                                 <p>Citadel 12mm Dice Set</p>
                                 <p>€9,00</p>
                             </li>
-                            <li data-filter="GW tool">
+                            <li data-filter="GW tool a">
                                 <img src="../media/40KWoundTrackers.webp" alt="WH40KWoundTrackers">
                                 <p>Warhammer 40K: Wound Trackers</p>
                                 <p>€12,00</p>
                             </li>
-                            <li data-filter="GW boek">
+                            <li data-filter="GW boek a">
                                 <img src="../media/EngCrusadeMissionPackWarsofFaith.webp" alt="CrusadeMissionPackWarsofFaith">
                                 <p>Crusade Misson Pack: Wars Of Faith</p>
                                 <p>€35,00</p>
@@ -104,37 +104,37 @@
                     <section class="center">
                         <h3 id="Terrein"><span>Terrein</span></h3>
                         <ul class="productGallery">
-                            <li>
+                            <li data-filter="GW mini a">
                                 <img src="../media/ZoneMortalisFloorTileBox.webp" alt="ZoneMortalisFloorTileBox">
                                 <p>Necromunda: Zone Mortalis Floor Tile Set</p>
                                 <p>€60,00</p>
                             </li>
-                            <li>
+                            <li data-filter="GW mini a">
                                 <img src="../media/MunitorumContainers.webp" alt="MunitorumContainers">
                                 <p>Munitorum Armoured Containers</p>
                                 <p>€45,00</p>
                             </li>
-                            <li>
+                            <li data-filter="GW mini a">
                                 <img src="../media/SanctumAdministratus.webp" alt="SanctumAdministratus">
                                 <p>Battlezone Manufactorum Sanctum Administratus</p>
                                 <p>€70,00</p>
                             </li>
-                            <li>
+                            <li data-filter="GW mini a">
                                 <img src="../media/ZMCW.webp" alt="ColumnsAndWalls">
                                 <p>Zone Mortalis: Columns & Walls</p>
                                 <p>€70,00</p>
                             </li>
-                            <li>
+                            <li data-filter="GW mini a">
                                 <img src="../media/NECZMPlatformsStairs.webp" alt="PlatformsStairs">
                                 <p>Zone Mortalis: Platforms & Stairs</p>
                                 <p>€55,00</p>
                             </li>
-                            <li>
+                            <li data-filter="GW mini a">
                                 <img src="../media/SectorImperialisRuinsx.webp" alt="SectorImperialisRuinsx">
                                 <p>Sector Imperialis Ruins</p>
                                 <p>€35,00</p>
                             </li>
-                            <li>
+                            <li data-filter="GW mini a">
                                 <img src="../media/BattlezoneMechanicusGalvanicMagnavent.webp" alt="BattlezoneMechanicusGalvanicMagnavent">
                                 <p>Battlezone Mechanicus Galvanic Magnavent</p>
                                 <p>€65,00</p>
@@ -144,32 +144,32 @@
                     <section class="center">
                         <h3 id="HobbyEnVerf"><span>Hobby en verf</span></h3>
                         <ul class="productGallery">
-                            <li>
+                            <li data-filter="C verf a">
                                 <img src="../media/Base-Corax-White.webp" alt="BaseCoraxWhite">
                                 <p>Base: Corax White</p>
                                 <p>€3,60</p>
                             </li>
-                            <li>
+                            <li data-filter="C verf a">
                                 <img src="../media/Base-Abaddon-Black.webp" alt="BaseAbaddonBlack">
                                 <p>Base: Abaddon Black</p>
                                 <p>€3,60</p>
                             </li>
-                            <li>
+                            <li data-filter="C verf a">
                                 <img src="../media/Averland-Sunset.webp" alt="AverlandSunset">
                                 <p>Base: Averland Sunset</p>
                                 <p>€3,60</p>
                             </li>
-                            <li>
+                            <li data-filter="C verf a">
                                 <img src="../media/Asurmen_Blue_Contrast.webp" alt="AsurmenBlueContrast">
                                 <p>Contrast: Asurmen Blue</p>
                                 <p>€6,30</p>
                             </li>
-                            <li>
+                            <li data-filter="C verf a">
                                 <img src="../media/Dawnstone.webp" alt="Dawnstone">
                                 <p>Layer: Dawnstone</p>
                                 <p>3,60</p>
                             </li>
-                            <li>
+                            <li data-filter="C verf a">
                                 <img src="../media/TesseractGlowTechnical.webp" alt="TesseractGlowTechnical">
                                 <p>Technical: Tesseract Glow</p>
                                 <p>€6,30</p>

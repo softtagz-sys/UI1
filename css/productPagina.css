@@ -1,3 +1,28 @@
+/*FILTER*/
+li, input{
+    display: none;
+}
+
+input#a:checked ~ aside label#lbla,
+input#GW:checked ~ aside label#lblGW,
+input#C:checked ~ aside label#lblC,
+input#boek:checked ~ aside label#lblBoek,
+input#mini:checked ~ aside label#lblMini,
+input#tool:checked ~ aside label#lblTool,
+input#verf:checked ~ aside label#lblVerf{
+    color: #01447e;
+}
+
+input#a:checked ~ article li[data-filter~="a"],
+input#GW:checked ~ article li[data-filter~="GW"],
+input#C:checked ~ article li[data-filter~="C"],
+input#boek:checked ~ article li[data-filter~="boek"],
+input#mini:checked ~ article li[data-filter~="mini"],
+input#tool:checked ~ article li[data-filter~="tool"],
+input#verf:checked ~ article li[data-filter~="verf"]{
+    display: initial;
+}
+
 .productGallery{
     display: grid;
     grid-gap: 10px;
@@ -25,3 +50,6 @@ ul{
 p{
     padding: 0;
 }
+
+
+
