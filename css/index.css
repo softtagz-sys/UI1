@@ -1,26 +1,23 @@
 .photoGallery {
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: 500px 500px;
-    grid-template-rows: 260px 260px;
+    grid-template-areas:
+    "photoCombatPatrol photoTerrain"
+    "photoCombatPatrol photoHobbyPaint";
     justify-content: center;
 }
 .photoGallery a:hover{
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
-.photoCombatPatrol {
-    grid-column: 1;
-    grid-row: 1 / 3;
+a.photoCombatPatrol{
+    grid-area: photoCombatPatrol;
 }
-.photoTerrain {
-    grid-column: 2;
-    grid-row: 1;
+a.photoTerrain{
+    grid-area: photoTerrain;
 }
-.photoHobbyPaint{
-    grid-column: 2;
-    grid-row: 2;
+a.photoHobbyPaint{
+    grid-area: photoHobbyPaint;
 }
-
 .container {
     position: relative;
     text-align: center;
