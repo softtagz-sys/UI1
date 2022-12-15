@@ -28,7 +28,7 @@ h2 span {
     background:#fff;
     padding:0 10px;
 }
-h3 {
+h3,h4 {
     font-size: 100%;
     width: 90%;
     text-align: center;
@@ -37,7 +37,7 @@ h3 {
     margin: 50px auto;
     color: #1D67AE;
 }
-h3 span {
+h3 span, h4 span {
     background:#fff;
     padding:0 10px;
 }
