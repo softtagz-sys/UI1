@@ -10,7 +10,8 @@ input#boek:checked ~ aside label#lblBoek,
 input#mini:checked ~ aside label#lblMini,
 input#tool:checked ~ aside label#lblTool,
 input#verf:checked ~ aside label#lblVerf{
-    color: #01447e;
+    color: #1D67AE;
+    font-weight: bold;
 }
 
 input#a:checked ~ article li[data-filter~="a"],
@@ -50,6 +51,10 @@ ul{
 p{
     padding: 0;
 }
-
+label{
+    display: block;
+    text-align: center;
+    font-size: .85em;
+}
 
 
