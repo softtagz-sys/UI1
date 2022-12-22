@@ -3,8 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <script src="../script/form_validation.js"></script>
+    <link href="../css/site.css" rel="stylesheet">
+    <link href="../css/personalisering.css" rel="stylesheet">
 </head>
 <body>
-<h1>personalisering</h1>
+<div class="content">
+    <header>
+        <h1 class="hiddenTitle">Games quest FAQ</h1>
+        <img src="../media/GamesQuestLogo.jpeg" alt="GamesQuestLogo" class="center">
+        <nav class="menu">
+            <h2 class="hiddenTitle">Menu</h2>
+            <ul class="center">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./Productpagina.html">Producten ▼</a>
+                    <ul>
+                        <li><a href="./Productpagina.html#Essentials">Essentials</a></li>
+                        <li><a href="./Productpagina.html#Terrein">Terrein</a></li>
+                        <li><a href="./Productpagina.html#HobbyEnVerf">Hobby/verf</a></li>
+                    </ul>
+                </li>
+                <li><a href="./Personalisering.html" class="active">Personalisering</a></li>
+                <li><a href="./FAQ.html">FAQ</a></li>
+                <li><a href="./Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2><span>personalisering</span></h2>
+        <form action="Bevestiging.html" method="get">
+            <fieldset>
+                <legend>Persoonlijke gegevens</legend>
+                <label for="voornaam">voornaam:</label>
+                <input type="text" id="voornaam" name="voornaam" placeholder="John" required autofocus>
+                <span id="voornaamSpan"></span>
+                <label for="achterNaam">achternaam:</label>
+                <input type="text" id="achternaam" name="achternaam" placeholder="doe" required>
+                <span id="achternaamSpan"></span>
+                <label for="nummer">Telefoonnummer:</label>
+                <input type="tel" id="nummer" name="nummer" placeholder="+324 xx xx xx xx" maxlength="12">
+                <label for="mail">Email:</label>
+                <input type="email" id="mail" name="mail" placeholder="John@email.com" required>
+                <span id="mailSpan"></span>
+                <label for="adres">Adres:</label>
+                <input type="text" id="adres" name="adres" placeholder="Nationalestraat 5, 2000 Antwerpen" required>
+            </fieldset>
+            <fieldset>
+                <legend>Bestelling</legend>
+                <label for="product">Product:</label>
+                <select name="product" id="product">
+                    <optgroup label="Essentials">
+                        <option value="RecruitEdition">Warhammer 40K Recruit Edition</option>
+                        <option value="EliteEdition">Warhammer 40K Elite Edition</option>
+                        <option value="CommandEdition">Warhammer 40K Command Edition</option>
+                    </optgroup>
+                </select>
+                <label for="aantal">Aantal:</label>
+                <input type="number" id="aantal" name="aantal" value="1">
+                <label for="cadeau">Wenst u het ingepakt?:</label>
+                <input type="checkbox" id="cadeau" name="cadeau">
+                <label for="editie">Editie:</label>
+                <select name="editie" id="editie">
+                    <option value="7de">7de</option>
+                    <option value="8ste">8ste</option>
+                    <option value="9ste">9ste</option>
+                </select>
+                <label for="info">Extra:</label>
+                <textarea id="info" placeholder="Als u ons nog iets wenst mee te delen kan dat hier"></textarea>
+            </fieldset>
+            <span id="verzendenSpan"></span>
+            <input type="submit" id="Submit" value="Verzenden">
+            <input type="reset" id="reset" value="reset">
+        </form>
+    </main>
+</div>
 </body>
 </html>

@@ -1,0 +1,45 @@
+form{
+    max-width: 50em;
+    margin: 10px auto;
+}
+form fieldset{
+    border: 1px solid;
+    margin-top: 1em;
+}
+form fieldset label{
+    display: inline-block;
+    width: 30%;
+    margin-top: 18px;
+}
+form fieldset textarea{
+    box-sizing: border-box;
+    width: 100%;
+    height: 10em;
+}
+form fieldset input, form select{
+    box-sizing: border-box;
+    width: 65%;
+}
+form input[type="submit"]{
+    float: right;
+    margin: 1em 0;
+    width: 10em;
+}
+form input[type="reset"]{
+    float: left;
+    margin: 1em 0;
+    width: 10em;
+}
+form input[type="checkbox"]{
+    horiz-align: left;
+}
+form span{
+    color: red;
+    display:block;
+}
+.validInput{
+    background-color: green;
+    color: white;
+}
+
+
