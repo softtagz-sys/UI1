@@ -31,59 +31,49 @@
         </nav>
     </header>
     <main>
+        <section>
         <h2><span>personalisering</span></h2>
-        <form action="Bevestiging.html" method="get">
-            <fieldset>
-                <legend>Persoonlijke gegevens</legend>
-                <label for="voornaam">
-                    <super>*</super>
-                    voornaam:
-                </label>
-                <input type="text" id="voornaam" name="voornaam" placeholder="John" required autofocus>
-                <span id="voornaamSpan"></span>
-                <label for="achterNaam">
-                    <super>*</super>
-                    achternaam:
-                </label>
-                <input type="text" id="achternaam" name="achternaam" placeholder="doe" required>
-                <span id="achternaamSpan"></span>
-                <label for="nummer">Telefoonnummer:</label>
-                <input type="tel" id="nummer" name="nummer" placeholder="+324 xx xx xx xx" maxlength="12">
-                <label for="mail">
-                    <super>*</super>
-                    Email:
-                </label>
-                <input type="email" id="mail" name="mail" placeholder="John@email.com" required>
-                <span id="mailSpan"></span>
-                <label for="adres">
-                    <super>*</super>
-                    Adres:
-                </label>
-                <input type="text" id="adres" name="adres" placeholder="Nationalestraat 5, 2000 Antwerpen" required>
-            </fieldset>
-            <fieldset>
-                <legend>Bestelling</legend>
-                <label for="product-select">Product:</label>
-                <select name="product" id="product-select">
+            <form action="Bevestiging.html" method="get">
+                <fieldset>
+                    <legend>Persoonlijke gegevens</legend>
+                    <label for="vnaam">* voornaam:</label>
+                    <input type="text" id="vnaam" name="voornaam" placeholder="John" required autofocus>
+                    <span id="voornaamSpan"></span>
+                    <label for="anaam">* achternaam:</label>
+                    <input type="text" id="anaam" name="achternaam" placeholder="doe" required>
+                    <span id="achternaamSpan"></span>
+                    <label for="telefoon">Telefoonnummer:</label>
+                    <input type="tel" id="telefoon" name="nummer" placeholder="+324 xx xx xx xx" maxlength="12">
+                    <label for="mail">* Email:</label>
+                    <input type="email" id="mail" name="mail" placeholder="John@email.com" required>
+                    <span id="mailSpan"></span>
+                    <label for="adres">* Adres:</label>
+                    <input type="text" id="adres" name="adres" placeholder="Nationalestraat 5, 2000 Antwerpen" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Bestelling</legend>
+                    <label for="product-select">Product:</label>
+                    <select name="product" id="product-select">
 
-                </select>
-                <label for="aantal">Aantal:</label>
-                <input type="number" id="aantal" name="aantal" value="1">
-                <label for="cadeau">Wenst u het ingepakt?:</label>
-                <input type="checkbox" id="cadeau" name="cadeau">
-                <label for="editie">Editie:</label>
-                <select name="editie" id="editie">
-                    <option value="7de">7de</option>
-                    <option value="8ste">8ste</option>
-                    <option value="9ste">9ste</option>
-                </select>
-                <label for="info">Extra:</label>
-                <textarea id="info" name="info" placeholder="Als u ons nog iets wenst mee te delen kan dat hier"></textarea>
-            </fieldset>
-            <span id="verzendenSpan"></span>
-            <input type="submit" id="Submit" value="Verzenden">
-            <input type="reset" id="reset" value="reset">
-        </form>
+                    </select>
+                    <label for="aantal">Aantal:</label>
+                    <input type="number" id="aantal" name="aantal" value="1">
+                    <label for="cadeau">Wenst u het ingepakt?:</label>
+                    <input type="checkbox" id="cadeau" name="cadeau">
+                    <label for="editie">Editie:</label>
+                    <select name="editie" id="editie">
+                        <option value="7de">7de</option>
+                        <option value="8ste">8ste</option>
+                        <option value="9ste">9ste</option>
+                    </select>
+                    <label for="info">Extra:</label>
+                    <textarea id="info" name="info" placeholder="Als u ons nog iets wenst mee te delen kan dat hier"></textarea>
+                </fieldset>
+                <span id="verzendenSpan"></span>
+                <input type="submit" id="Submit" value="Verzenden">
+                <input type="reset" id="reset" value="reset">
+            </form>
+        </section>
     </main>
 </div>
 </body>

@@ -30,15 +30,9 @@ form input[type="reset"]{
     margin: 1em 0;
     width: 10em;
 }
-form input[type="checkbox"]{
-    horiz-align: left;
-}
 form span{
     color: red;
     display:block;
-}
-super{
-    color: red;
 }
 .validInput{
     background-color: green;
