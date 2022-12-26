@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <script src="../script/form_validation.js"></script>
+    <script type="module" src="../script/dyn_form.js"></script>
     <link href="../css/site.css" rel="stylesheet">
     <link href="../css/personalisering.css" rel="stylesheet">
 </head>
@@ -62,13 +63,9 @@
             </fieldset>
             <fieldset>
                 <legend>Bestelling</legend>
-                <label for="product">Product:</label>
-                <select name="product" id="product">
-                    <optgroup label="Essentials">
-                        <option value="Warhammer 40K Recruit Edition">Warhammer 40K Recruit Edition</option>
-                        <option value="Warhammer 40K Elite Edition">Warhammer 40K Elite Edition</option>
-                        <option value="Warhammer 40K Command Edition">Warhammer 40K Command Edition</option>
-                    </optgroup>
+                <label for="product-select">Product:</label>
+                <select name="product" id="product-select">
+
                 </select>
                 <label for="aantal">Aantal:</label>
                 <input type="number" id="aantal" name="aantal" value="1">

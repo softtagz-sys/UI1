@@ -3,3 +3,22 @@
     width: 100%;
     margin: 0px 60px;
 }
+.productCard{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas:
+        "foto naam"
+        "foto prijs"
+        "foto categorie";
+    max-width: 400px;
+}
+.productCard img {
+    max-width: 200px;
+    height:auto;
+}
+.productCard ul{
+    list-style: none;
+}
+.productCard p{
+    padding: 0;
+}
