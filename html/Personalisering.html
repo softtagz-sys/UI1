@@ -34,18 +34,30 @@
         <form action="Bevestiging.html" method="get">
             <fieldset>
                 <legend>Persoonlijke gegevens</legend>
-                <label for="voornaam">voornaam:</label>
+                <label for="voornaam">
+                    <super>*</super>
+                    voornaam:
+                </label>
                 <input type="text" id="voornaam" name="voornaam" placeholder="John" required autofocus>
                 <span id="voornaamSpan"></span>
-                <label for="achterNaam">achternaam:</label>
+                <label for="achterNaam">
+                    <super>*</super>
+                    achternaam:
+                </label>
                 <input type="text" id="achternaam" name="achternaam" placeholder="doe" required>
                 <span id="achternaamSpan"></span>
                 <label for="nummer">Telefoonnummer:</label>
                 <input type="tel" id="nummer" name="nummer" placeholder="+324 xx xx xx xx" maxlength="12">
-                <label for="mail">Email:</label>
+                <label for="mail">
+                    <super>*</super>
+                    Email:
+                </label>
                 <input type="email" id="mail" name="mail" placeholder="John@email.com" required>
                 <span id="mailSpan"></span>
-                <label for="adres">Adres:</label>
+                <label for="adres">
+                    <super>*</super>
+                    Adres:
+                </label>
                 <input type="text" id="adres" name="adres" placeholder="Nationalestraat 5, 2000 Antwerpen" required>
             </fieldset>
             <fieldset>
@@ -53,9 +65,9 @@
                 <label for="product">Product:</label>
                 <select name="product" id="product">
                     <optgroup label="Essentials">
-                        <option value="RecruitEdition">Warhammer 40K Recruit Edition</option>
-                        <option value="EliteEdition">Warhammer 40K Elite Edition</option>
-                        <option value="CommandEdition">Warhammer 40K Command Edition</option>
+                        <option value="Warhammer 40K Recruit Edition">Warhammer 40K Recruit Edition</option>
+                        <option value="Warhammer 40K Elite Edition">Warhammer 40K Elite Edition</option>
+                        <option value="Warhammer 40K Command Edition">Warhammer 40K Command Edition</option>
                     </optgroup>
                 </select>
                 <label for="aantal">Aantal:</label>
@@ -69,7 +81,7 @@
                     <option value="9ste">9ste</option>
                 </select>
                 <label for="info">Extra:</label>
-                <textarea id="info" placeholder="Als u ons nog iets wenst mee te delen kan dat hier"></textarea>
+                <textarea id="info" name="info" placeholder="Als u ons nog iets wenst mee te delen kan dat hier"></textarea>
             </fieldset>
             <span id="verzendenSpan"></span>
             <input type="submit" id="Submit" value="Verzenden">

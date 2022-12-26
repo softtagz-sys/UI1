@@ -3,57 +3,50 @@ window.addEventListener("load", INIT);
 const query = window.location.search;
 const searchParams = new URLSearchParams(query);
 
-let valueProduct = searchParams.get("product");
-let valueLastName = searchParams.get("lastname");
-let valueName = searchParams.get("name");
-let valueMail = searchParams.get("email");
-let valueTel = searchParams.get("telefoon");
-let valueStraat = searchParams.get("straat");
+let valueVoornaam = searchParams.get("voornaam");
+let valueAchternaam = searchParams.get("achternaam");
 let valueNummer = searchParams.get("nummer");
-let valueCode = searchParams.get("postcode");
-let valueColor = searchParams.get("color");
+let valueMail = searchParams.get("mail");
+let valueAdres = searchParams.get("adres");
+
+let valueProduct = searchParams.get("product");
 let valueAantal = searchParams.get("aantal");
-let valueMat = searchParams.get("materiaal");
-let valueText = searchParams.get("opmerking");
+let valueCadeau = searchParams.get("cadeau");
+let valueEditie = searchParams.get("editie");
+let valueInfo = searchParams.get("info");
 
 function INIT() {
-    let spanProduct = document.getElementById("ProductBevestiging");
-    let spanLastName = document.getElementById("NaamBevestiging");
-    let spanName = document.getElementById("VoornaamBevestiging");
-    let spanMail = document.getElementById("EmailBevestiging");
-    let spanTel = document.getElementById("TelefoonBevestiging");
-    let spanStraat = document.getElementById("StraatBevestiging");
-    let spanNummer = document.getElementById("NummerBevestiging");
-    let spanCode = document.getElementById("PostcodeBevestiging");
-    let spanColor = document.getElementById("KleurBevestiging");
-    let spanAantal = document.getElementById("AantalBevestiging");
-    let spanMat = document.getElementById("MateriaalBevestiging");
-    let spanText = document.getElementById("OpmerkingBevestiging");
+    let voornaamSpan = document.getElementById("voornaamSpan");
+    let achternaamSpan = document.getElementById("achternaamSpan");
+    let nummerSpan = document.getElementById("nummerSpan");
+    let mailSpan = document.getElementById("mailSpan");
+    let adresSpan = document.getElementById("adresSpan");
 
-    spanProduct.innerHTML = "Uw product:<br>" + "&emsp;" + valueProduct;
-    spanLastName.innerHTML = "Naam:<br>" + "&emsp;" + valueLastName;
-    spanName.innerHTML = "Voornaam:<br>" + "&emsp;" + valueName;
-    spanMail.innerHTML = "Mail:<br>" + "&emsp;" + valueMail;
+    let productSpan = document.getElementById("productSpan");
+    let aantalSpan = document.getElementById("aantalSpan");
+    let cadeauSpan = document.getElementById("cadeauSpan");
+    let editieSpan = document.getElementById("editieSpan");
+    let infoSpan = document.getElementById("infoSpan");
 
-    if (valueTel === "+32 0" || valueTel === "") {
-        spanTel.innerHTML = "";
-    } else {
-        spanTel.innerHTML = "Telefoon nummer:<br>" + "&emsp;" + value;
-    }
+    fillSpan("Voornaam", valueVoornaam, voornaamSpan);
+    fillSpan("Achternaam", valueAchternaam, achternaamSpan);
+    fillSpan("Nummer", valueNummer, nummerSpan);
+    fillSpan("E-mail", valueMail, mailSpan);
+    fillSpan("Adres", valueAdres, adresSpan);
 
-    print("Straat", valueStraat, spanStraat);
-    print("Huisnummer", valueNummer, spanNummer);
-    print("Postcode", valueCode, spanCode);
-    print("Kleur", valueColor, spanColor);
-    print("Aantal", valueAantal, spanAantal);
-    print("Materiaal", valueMat, spanMat);
-    print("Uw omperking", valueText, spanText);
+    fillSpan("Product", valueProduct, productSpan);
+    fillSpan("Aantal", valueAantal, aantalSpan);
+    fillSpan("Cadeau",
+        valueCadeau?"We pakken het met plezier in voor u":"We verpakken het niet"
+        , cadeauSpan);
+    fillSpan("Editie", valueEditie, editieSpan);
+    fillSpan("Extra", valueInfo, infoSpan);
 }
 
-function print(naam, value, span){
-    if (value === "") {
+function fillSpan(spanNaam, value, span){
+    if (value === "" ||  value === null) {
         span.innerHTML = "";
     } else {
-        span.innerHTML = naam + ":<br>" + "&emsp;" + value;
+        span.innerHTML = spanNaam + ": " + "&emsp;" + value +"<br>";
     }
 }

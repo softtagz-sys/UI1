@@ -37,9 +37,13 @@ form span{
     color: red;
     display:block;
 }
+super{
+    color: red;
+}
 .validInput{
     background-color: green;
     color: white;
 }
+
 
 

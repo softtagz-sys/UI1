@@ -21,35 +21,40 @@ function SUBMIT() {
     }
 }
 function achternaamValidatie() {
-    let form = document.getElementById("achternaam");
-    let span = document.getElementById("achternaamSpan");
-
-    naamValidatie(form, span);
+    naamValidatie(
+        document.getElementById("achternaam"),
+        document.getElementById("achternaamSpan")
+    );
 }
 function voornaamValidatie() {
-    let form = document.getElementById("voornaam");
-    let span = document.getElementById("voornaamSpan");
-
-    naamValidatie(form, span);
+    naamValidatie(
+        document.getElementById("voornaam"),
+        document.getElementById("voornaamSpan")
+    );
 }
 function naamValidatie(form,span){
     if (form.value.length < 2) {
         span.innerHTML = "Gelieve een waarde in te geven";
-        form.removeAttribute("class");
+        form.classList.remove("validInput");
         return false;
-    } else if (form.value.includes(" ")) {
-        span.innerHTML = "Geen spaties aub";
-        form.removeAttribute("class");
+    } else if (startsOrEndsWithWhitespace(form.value)) {
+        span.innerHTML = "Geen spaties voor of achter aub";
+        form.classList.remove("validInput");
         return false;
     } else {
         console.log(form.value);
         span.innerHTML = "";
-        form.setAttribute("class", "validInput");
+        form.classList.add("validInput");
         return true;
     }
 }
+function startsOrEndsWithWhitespace(str)
+{
+    return /^\s|\s$/.test(str);
+}
+
 function mailValidatie() {
-    let regex = new RegExp("([A-z]+[\.]{1}[A-z]+(\.[0-9])?)@((kdg\.be)|(student\.kdg\.be))");
+    let regex = new RegExp(/^[A-Za-z0-9]+(\.[A-Za-z0-9]+)*@(kdg\.be|student\.kdg\.be)$/i);
     let form = document.getElementById("mail");
     let correct = regex.test(form.value);
     let span = document.getElementById("mailSpan");
