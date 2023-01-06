@@ -1,9 +1,9 @@
 window.addEventListener("load", INIT);
 
 function INIT() {
-    let voornaam = document.getElementById("voornaam");
+    let voornaam = document.getElementById("vnaam");
     voornaam.addEventListener("focusout", voornaamValidatie);
-    let achternaam = document.getElementById("achternaam");
+    let achternaam = document.getElementById("anaam");
     achternaam.addEventListener("focusout", achternaamValidatie);
     let click = document.getElementById("mail");
     click.addEventListener("keyup", mailValidatie)
@@ -22,13 +22,13 @@ function SUBMIT() {
 }
 function achternaamValidatie() {
     naamValidatie(
-        document.getElementById("achternaam"),
+        document.getElementById("anaam"),
         document.getElementById("achternaamSpan")
     );
 }
 function voornaamValidatie() {
     naamValidatie(
-        document.getElementById("voornaam"),
+        document.getElementById("vnaam"),
         document.getElementById("voornaamSpan")
     );
 }
