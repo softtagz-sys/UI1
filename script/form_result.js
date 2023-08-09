@@ -33,7 +33,6 @@ function INIT() {
     fillSpan("Nummer", valueNummer, nummerSpan);
     fillSpan("E-mail", valueMail, mailSpan);
     fillSpan("Adres", valueAdres, adresSpan);
-
     fillSpan("Product", valueProduct, productSpan);
     fillSpan("Aantal", valueAantal, aantalSpan);
     fillSpan("Cadeau",

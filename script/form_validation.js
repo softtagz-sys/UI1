@@ -7,27 +7,27 @@ function INIT() {
     achternaam.addEventListener("focusout", achternaamValidatie);
     let click = document.getElementById("mail");
     click.addEventListener("keyup", mailValidatie)
-    let button = document.getElementById("Submit");
+    let button = document.getElementById("submit");
     button.addEventListener("click", SUBMIT)
 }
-function SUBMIT() {
+function SUBMIT(event) {
     let span = document.getElementById("verzendenSpan")
-
     if (voornaamValidatie() && achternaamValidatie() && mailValidatie()) {
         return true;
     } else {
+        event.preventDefault();
         span.innerHTML = "Gelieve alles juist in te vullen";
         return false;
     }
 }
 function achternaamValidatie() {
-    naamValidatie(
+    return naamValidatie(
         document.getElementById("anaam"),
         document.getElementById("achternaamSpan")
     );
 }
 function voornaamValidatie() {
-    naamValidatie(
+    return naamValidatie(
         document.getElementById("vnaam"),
         document.getElementById("voornaamSpan")
     );
@@ -54,19 +54,18 @@ function startsOrEndsWithWhitespace(str)
 }
 
 function mailValidatie() {
-    let regex = new RegExp(/^[A-Za-z0-9]+(\.[A-Za-z0-9]+)*@(kdg\.be|student\.kdg\.be)$/i);
+    let regex = new RegExp("([A-z]+[\.][A-z]+(.[0-9])?)@((kdg.be)|(student.kdg.be))");
     let form = document.getElementById("mail");
     let correct = regex.test(form.value);
     let span = document.getElementById("mailSpan");
+    console.log(form.value);
 
-    debugger;
     if (!correct) {
         span.innerHTML = "Email adres is niet van het correcte type";
 
         return false;
     } else {
+        span.innerHTML = "";
         return true;
     }
-
-
 }

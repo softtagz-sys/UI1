@@ -29,6 +29,7 @@ export const productenData = [
             en:"The Warhammer 40,000 Recruit Edition is an entry-level tabletop wargame set in a dystopian science fiction universe. This box set is designed for newcomers to the hobby and includes simplified rules, miniatures, and everything needed to start playing battles in the grim darkness of the 41st millennium."
         },
         img:"../media/WH40KRecruitEditionStock.webp",
+        link: "Productdetailpagina1.html",
         merk: merken.brand002,
         soort: soort.type002,
         prijs: 40.00
@@ -46,6 +47,7 @@ export const productenData = [
             en:"The Warhammer 40,000 Elite Edition is a comprehensive tabletop wargame set that offers an enhanced gaming experience in a dark, futuristic universe. It includes a wider range of miniatures, advanced rules, and various components for players looking to delve deeper into the intricacies of battles in the 41st millennium."
         },
         img:"../media/WH40KEliteEditionStock.webp",
+        link: "Productdetailpagina2.html",
         merk: merken.brand002,
         soort: soort.type002,
         prijs: 80.00
@@ -62,6 +64,7 @@ export const productenData = [
             en:"The Warhammer 40,000 Command Edition is a complete tabletop wargame package that provides an immersive experience in the grim and gritty universe of the 41st millennium. This set includes a substantial selection of miniatures, advanced rules, and various accessories, making it an ideal choice for players seeking a well-rounded gaming experience."
         },
         img:"../media/WH40KCommandEditionStock.webp",
+        link: "Productdetailpagina3.html",
         merk: merken.brand002,
         soort: soort.type002,
         prijs: 145.00
@@ -78,6 +81,7 @@ export const productenData = [
             en:"The Warhammer 40,000 Core Rule Book is the essential guide that provides the foundation for playing battles in the dystopian universe of the 41st millennium. It includes comprehensive rules, lore, and information to help players navigate the complexities of the game and immerse themselves in the dark and expansive setting."
         },
         img:"../media/ENGRulebook.webp",
+        link: "",
         merk: merken.brand002,
         soort: soort.type001,
         prijs: 55.00
@@ -94,6 +98,7 @@ export const productenData = [
             en:"The Games Workshop Tape Measure is a precision tool used in tabletop wargaming to measure distances between miniatures and determine movement and ranges. It's an essential accessory for ensuring accurate gameplay and strategic positioning on the gaming table."
         },
         img:"../media/TapeMeasure.webp",
+        link: "",
         merk: merken.brand002,
         soort: soort.type003,
         prijs: 7.00
@@ -110,6 +115,7 @@ export const productenData = [
             en:"The Citadel 12mm Dice Set is a collection of small dice designed by Citadel, a brand known for its high-quality gaming accessories. These 12mm dice are commonly used in tabletop games like Warhammer 40,000 and other wargames. They come in various colors and are perfect for rolling to determine outcomes during gameplay."
         },
         img:"../media/Dice-Cube.webp",
+        link: "",
         merk: merken.brand001,
         soort: soort.type003,
         prijs: 9.00
@@ -126,6 +132,7 @@ export const productenData = [
             en:"Warhammer 40,000: Wound Trackers are tools used to keep track of the damage taken by individual miniatures during battles. These trackers help players easily monitor the remaining wounds of their units as they sustain damage, ensuring accurate representation of the model's condition and enhancing the gameplay experience."
         },
         img:"../media/40KWoundTrackers.webp",
+        link: "",
         merk: merken.brand002,
         soort: soort.type003,
         prijs: 12.00
@@ -142,6 +149,7 @@ export const productenData = [
             en:"The Crusade Mission Pack: Wars of Faith is an expansion for Warhammer 40,000 that introduces a series of narrative-driven missions and campaigns focused on themes of faith, devotion, and conflict. This pack provides players with new scenarios, objectives, and challenges to enhance their gaming experience, allowing them to immerse themselves in epic battles within the grim darkness of the 41st millennium."
         },
         img:"../media/EngCrusadeMissionPackWarsofFaith.webp",
+        link: "",
         merk: merken.brand002,
         soort: soort.type001,
         prijs: 35.00
@@ -159,6 +167,7 @@ export const productenData = [
             en:"The Necromunda: Zone Mortalis Floor Tile Set is a collection of modular terrain tiles designed for the Necromunda tabletop game. These tiles represent the intricate and dangerous environments of the hive cities, allowing players to create multi-level battlegrounds with walkways, platforms, and tight corridors. The set enhances the immersive experience of battles within the grim underhive."
         },
         img:"../media/ZoneMortalisFloorTileBox.webp",
+        link: "",
         merk: merken.brand002,
         soort: soort.type002,
         prijs: 60.00
@@ -175,6 +184,7 @@ export const productenData = [
             en:"Munitorum Armoured Containers are terrain pieces designed for Warhammer 40,000 and other tabletop wargames. These containers represent sturdy storage units found across battlefields in the 41st millennium. They can serve as cover, objectives, or obstacles during gameplay, adding both tactical depth and thematic realism to battles fought in the grim and war-torn universe."
         },
         img:"../media/MunitorumContainers.webp",
+        link: "",
         merk: merken.brand002,
         soort: soort.type002,
         prijs: 45.00
@@ -191,6 +201,7 @@ export const productenData = [
             en:"The Battlezone Manufactorum Sanctum Administratus is a terrain piece for Warhammer 40,000 and other tabletop wargames. This kit represents a sacred administrative building within the manufactorum, an industrial complex in the grimdark universe. It adds depth to battlefield setups, providing players with a thematic and strategic element for their battles in the war-torn 41st millennium."
         },
         img:"../media/SanctumAdministratus.webp",
+        link: "",
         merk: merken.brand002,
         soort: soort.type002,
         prijs: 70.00
@@ -207,6 +218,7 @@ export const productenData = [
             en:"Zone Mortalis: Columns & Walls is a terrain expansion designed for Warhammer 40,000 and other tabletop wargames. This set includes various columns and walls that are suitable for creating tight, indoor battlegrounds with a confined and claustrophobic feel. It allows players to craft intricate layouts, narrow passages, and strategic chokepoints for intense skirmishes in the grimdark universe."
         },
         img:"../media/ZMCW.webp",
+        link: "",
         merk: merken.brand002,
         soort: soort.type002,
         prijs: 70.00
@@ -223,6 +235,7 @@ export const productenData = [
             en:"Zone Mortalis: Platforms & Stairs is a terrain expansion designed for Warhammer 40,000 and other tabletop wargames. This set includes various platforms and stairs that are ideal for constructing multi-level battlefields with vertical gameplay elements. It allows players to create dynamic battlegrounds with elevated positions, tactical advantages, and opportunities for strategic maneuvering in the grimdark universe."
         },
         img:"../media/NECZMPlatformsStairs.webp",
+        link: "",
         merk: merken.brand002,
         soort: soort.type002,
         prijs: 40.00
@@ -239,6 +252,7 @@ export const productenData = [
             en:"The Sector Imperialis Ruins is a terrain set designed for Warhammer 40,000 and other tabletop wargames. This kit includes ruins and debris that represent the remains of once-majestic structures in the sprawling cities of the 41st millennium. It adds a realistic and immersive element to battlefields, allowing players to create urban warzones with cover, line of sight blockers, and thematic depth."
         },
         img:"../media/SectorImperialisRuinsx.webp",
+        link: "",
         merk: merken.brand002,
         soort: soort.type002,
         prijs: 35.00
@@ -255,6 +269,7 @@ export const productenData = [
             en:"The Battlezone Mechanicus Galvanic Magnavent is a terrain piece designed for Warhammer 40,000 and other tabletop wargames. This kit represents a massive industrial structure used for resource extraction and processing in the grimdark future. It adds a unique visual element to the battlefield and offers strategic possibilities for cover, line of sight, and elevation advantages."
         },
         img:"../media/BattlezoneMechanicusGalvanicMagnavent.webp",
+        link: "",
         merk: merken.brand002,
         soort: soort.type002,
         prijs: 65.00
@@ -272,6 +287,7 @@ export const productenData = [
             en:"Base: Corax White is a paint color from Citadel, a brand known for its miniature painting supplies. This particular color is a foundation paint used as a base coat for miniature models. It provides a smooth and even white foundation, allowing other colors to adhere better when layering and highlighting."
         },
         img:"../media/Base-Corax-White.webp",
+        link: "",
         merk: merken.brand001,
         soort: soort.type004,
         prijs: 3.60
@@ -288,6 +304,7 @@ export const productenData = [
             en:"Base: Abaddon Black is a paint color from Citadel, a brand renowned for its miniature painting products. This color is a foundational paint used as a base coat for miniature models. It provides a solid black base that helps other colors adhere well during layering and highlighting, creating depth and contrast in the final paint job."
         },
         img:"../media/Base-Abaddon-Black.webp",
+        link: "",
         merk: merken.brand001,
         soort: soort.type004,
         prijs: 3.60
@@ -304,6 +321,7 @@ export const productenData = [
             en:"Base: Averland Sunset is a paint color from Citadel, a brand known for its miniature painting supplies. This color is designed to be used as a base coat for miniature models. It features a vibrant yellow tone and provides a solid starting point for creating bright and bold color schemes on your miniatures."
         },
         img:"../media/Averland-Sunset.webp",
+        link: "",
         merk: merken.brand001,
         soort: soort.type004,
         prijs: 3.60
@@ -320,6 +338,7 @@ export const productenData = [
             en:"Contrast: Asurmen Blue is a paint product from Citadel, a brand renowned for its miniature painting supplies. Contrast paints are designed to provide shading and highlighting effects in a single step. Asurmen Blue is a specific color in the Contrast range, known for its deep blue hue. It allows for quick and efficient color application, creating shading and detail on miniatures."
         },
         img:"../media/Asurmen_Blue_Contrast.webp",
+        link: "",
         merk: merken.brand001,
         soort: soort.type004,
         prijs: 6.30
@@ -336,6 +355,7 @@ export const productenData = [
             en:"Layer: Dawnstone is a paint color from Citadel, a brand known for its miniature painting supplies. Layer paints are used to add finer details and highlights to miniature models. Dawnstone is a specific color that offers a neutral gray tone, often used for highlighting and shading various parts of miniatures to enhance their visual appeal."
         },
         img:"../media/Dawnstone.webp",
+        link: "",
         merk: merken.brand001,
         soort: soort.type004,
         prijs: 3.60
@@ -352,6 +372,7 @@ export const productenData = [
             en:"Technical: Tesseract Glow is a paint product from Citadel, a brand known for its miniature painting supplies. Technical paints are designed for specific effects and finishes. Tesseract Glow is a particular type of paint that creates a glowing and ethereal effect when applied over a base color. It's often used to simulate energy, magical effects, or otherworldly auras on miniatures."
         },
         img:"../media/TesseractGlowTechnical.webp",
+        link: "",
         merk: merken.brand001,
         soort: soort.type004,
         prijs: 6.30
