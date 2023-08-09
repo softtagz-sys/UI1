@@ -34,9 +34,14 @@ form span{
     color: red;
     display:block;
 }
-.validInput{
-    background-color: green;
-    color: white;
+
+
+input:invalid {
+    background-color: #FFAAAA;
+}
+
+input:valid {
+    background-color: #AAFFAA;
 }
 
 

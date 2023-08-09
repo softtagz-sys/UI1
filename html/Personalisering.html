@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <script src="../script/form_validation.js"></script>
-    <script type="module" src="../script/dyn_form.js"></script>
+    <script src="../script/form_validation.js" defer></script>
+    <script type="module" src="../script/dyn_form.js" defer></script>
     <link href="../css/site.css" rel="stylesheet">
     <link href="../css/personalisering.css" rel="stylesheet">
 </head>
@@ -43,7 +43,7 @@
                     <input type="text" id="anaam" name="achternaam" placeholder="doe" required>
                     <span id="achternaamSpan"></span>
                     <label for="telefoon">Telefoonnummer:</label>
-                    <input type="tel" id="telefoon" name="nummer" placeholder="+324 xx xx xx xx" maxlength="12">
+                    <input type="tel" id="telefoon" name="nummer" placeholder="+324 xx xx xx xx" minlength="16"  maxlength="16">
                     <label for="mail">* Email:</label>
                     <input type="email" id="mail" name="mail" placeholder="John@email.com" required>
                     <span id="mailSpan"></span>
@@ -57,7 +57,7 @@
 
                     </select>
                     <label for="aantal">Aantal:</label>
-                    <input type="number" id="aantal" name="aantal" value="1">
+                    <input type="number" id="aantal" name="aantal" value="1" min="1">
                     <label for="cadeau">Wenst u het ingepakt?:</label>
                     <input type="checkbox" id="cadeau" name="cadeau">
                     <label for="editie">Editie:</label>

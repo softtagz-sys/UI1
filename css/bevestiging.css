@@ -1,7 +1,7 @@
 .output{
     display: block;
     width: 100%;
-    margin: 0px 60px;
+    margin: 0 60px;
 }
 .productCard{
     display: grid;

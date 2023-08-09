@@ -20,6 +20,7 @@ let valueInfo = searchParams.get("info");
 const product = productenData.filter(function (product) {return product.id == valueProduct})[0];
 
 function INIT() {
+
     let voornaamSpan = document.getElementById("voornaamSpan");
     let achternaamSpan = document.getElementById("achternaamSpan");
     let nummerSpan = document.getElementById("nummerSpan");
@@ -51,8 +52,11 @@ function INIT() {
 
     var section = document.createElement("section");
     article.append(section);
-    var ul = document.createElement("ul")
-    section.append(ul)
+    var title = document.createElement("h3");
+    section.append(title);
+    title.classList.add("hiddenTitle")
+    var ul = document.createElement("ul");
+    section.append(ul);
     ul.classList.add("productCard");
     var img = document.createElement("img");
     ul.append(img);
@@ -67,12 +71,16 @@ function INIT() {
     pPrijs.classList.add("prijs");
     var pCategorie = document.createElement("p");
     li.append(pCategorie);
+    var pBeschrijving = document.createElement("p");
+    li.append(pBeschrijving)
     pCategorie.classList.add("categorie");
 
+    title.innerHTML = "Product card";
     img.src = product.img;
     pNaam.innerHTML = product.naam.en;
     pPrijs.innerHTML = "€" + product.prijs;
     pCategorie.innerHTML = product.categorie;
+    pBeschrijving.innerHTML = product.beschrijving.en;
 }
 
 function fillSpan(spanNaam, value, span){

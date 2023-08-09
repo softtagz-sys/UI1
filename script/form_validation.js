@@ -59,17 +59,14 @@ function mailValidatie() {
     let correct = regex.test(form.value);
     let span = document.getElementById("mailSpan");
 
-    if (form.value.length < 2) {
-        span.innerHTML = "Gelieve een waarde in te geven";
-        form.removeAttribute("class");
-        return false;
-    } else if (correct) {
-        span.innerHTML = "";
-        form.setAttribute("class", "validInput")
-        return true;
-    } else {
+    debugger;
+    if (!correct) {
         span.innerHTML = "Email adres is niet van het correcte type";
-        form.removeAttribute("class");
+
         return false;
+    } else {
+        return true;
     }
+
+
 }
